@@ -14,7 +14,7 @@ export const Header = styled.nav`
   display: flex;
   justify-content: center;
 
-  background: ${({ theme }) => theme.backgroundSecondary};
+  background: ${({ theme }) => theme.backgroudSecondary};
 
   border-bottom: 1px solid #dbdbdb;
 

@@ -1,15 +1,20 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Searchbar from '../Searchbar';
+
+import { Container, Logo } from './styles';
+
+import images from '../../../assets/images';
+import MenuIcons from '../MenuIcons';
 
 const Navbar = () => (
   <Container>
     {/* Logo */}
-    <div>logo</div>
+    <Logo src={images.logo} alt="instagram" />
     {/* Search */}
-    <div>search</div>
+    <Searchbar />
     {/* Icons */}
-    <div>icons</div>
+    <MenuIcons />
   </Container>
 );
 
