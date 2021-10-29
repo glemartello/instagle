@@ -34,7 +34,3 @@ export const Content = styled.main`
   width: 100%;
   max-width: 950px;
 `;
-
-export const ContentContainer = styled.div``;
-
-export const MetaContainer = styled.div``;

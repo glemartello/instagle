@@ -1,34 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Navbar from '../components/Navbar';
 
-import {
-  Container,
-  Header,
-  Content,
-  ContentContainer,
-  MetaContainer,
-} from './styles';
+import { Container, Header, Content } from './styles';
 
-const MainLayout = () => (
+const MainLayout = ({ children }) => (
   <Container>
     <Header>
       <Navbar />
     </Header>
-    <Content>
-      <ContentContainer>
-        {/* Stories */}
-        <div>Stories</div>
-        {/* Posts */}
-        <div>Posts</div>
-      </ContentContainer>
-      <MetaContainer>
-        {/* MiniProfile */}
-        <div>MiniProfile</div>
-        {/* Suggestions */}
-        <div>Suggestions</div>
-      </MetaContainer>
-    </Content>
+    <Content>{children}</Content>
   </Container>
 );
 
 export default MainLayout;
+
+MainLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
