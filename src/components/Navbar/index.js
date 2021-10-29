@@ -4,7 +4,7 @@ import Searchbar from '../Searchbar';
 
 import { Container, Logo } from './styles';
 
-import images from '../../../assets/images';
+import images from '../../assets/images';
 import MenuIcons from '../MenuIcons';
 
 const Navbar = () => (
