@@ -1,5 +1,5 @@
 import React from 'react';
-import faker from 'faker';
+import faker from '@faker-js/faker';
 
 import { Container, StoriesContainer } from './styles';
 import Story from '../../../components/Story';
@@ -7,7 +7,7 @@ import Story from '../../../components/Story';
 const data = [...Array(20)].map(() => ({
   id: faker.datatype.uuid(),
   name: faker.internet.userName().toLowerCase(),
-  photo: faker.image.avatar(),
+  photo: 'https://via.placeholder.com/50/EBEBEB/000000',
 }));
 
 const Stories = () => (
